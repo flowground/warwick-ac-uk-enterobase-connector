@@ -1,0 +1,168 @@
+{
+    "type": "object",
+    "properties": {
+        "comment": {
+            "required": false,
+            "type": "string"
+        },
+        "secondary_sample_accession": {
+            "required": false,
+            "type": "string"
+        },
+        "antigenic_formulas": {
+            "required": false,
+            "type": "string"
+        },
+        "my_strains": {
+            "required": false,
+            "type": "boolean"
+        },
+        "serotype": {
+            "required": false,
+            "type": "string"
+        },
+        "county": {
+            "required": false,
+            "type": "string"
+        },
+        "only_fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "postcode": {
+            "required": false,
+            "type": "string"
+        },
+        "lab_contact": {
+            "required": false,
+            "type": "string"
+        },
+        "substrains": {
+            "required": false,
+            "type": "boolean"
+        },
+        "city": {
+            "required": false,
+            "type": "string"
+        },
+        "strain_name": {
+            "required": false,
+            "type": "string"
+        },
+        "collection_date": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "collection_month": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "reldate": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "continent": {
+            "required": false,
+            "type": "string"
+        },
+        "source_details": {
+            "required": false,
+            "type": "string"
+        },
+        "version": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "latitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "assembly_barcode": {
+            "required": false,
+            "type": "string"
+        },
+        "source_niche": {
+            "required": false,
+            "type": "string"
+        },
+        "barcode": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "uberstrain": {
+            "required": false,
+            "type": "string"
+        },
+        "sortorder": {
+            "required": false,
+            "type": "string",
+            "default": "asc"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "collection_year": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "orderby": {
+            "required": false,
+            "type": "string",
+            "default": "barcode"
+        },
+        "return_all": {
+            "required": false,
+            "type": "boolean"
+        },
+        "source_type": {
+            "required": false,
+            "type": "string"
+        },
+        "country": {
+            "required": false,
+            "type": "string"
+        },
+        "region": {
+            "required": false,
+            "type": "string"
+        },
+        "longitude": {
+            "required": false,
+            "type": "number",
+            "format": "float"
+        },
+        "sample_accession": {
+            "required": false,
+            "type": "string"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 50
+        },
+        "collection_time": {
+            "required": false,
+            "type": "string"
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

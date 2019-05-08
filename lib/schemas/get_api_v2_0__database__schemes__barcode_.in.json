@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": {
+        "barcode": {
+            "required": true,
+            "type": "string"
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "barcode": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "created": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "lastmodified": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "limit": {
+                    "default": 50,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "offset": {
+                    "default": 0,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "only_fields": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "orderby": {
+                    "default": "barcode",
+                    "type": "string"
+                },
+                "scheme_name": {
+                    "type": "string"
+                },
+                "sortorder": {
+                    "default": "asc",
+                    "type": "string"
+                },
+                "version": {
+                    "format": "int32",
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

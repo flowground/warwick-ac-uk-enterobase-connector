@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "orderby": {
+            "required": false,
+            "type": "string",
+            "default": "barcode"
+        },
+        "barcode": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "only_fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 50
+        },
+        "sortorder": {
+            "required": false,
+            "type": "string",
+            "default": "asc"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "barcode": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "locus": {
+            "required": false,
+            "type": "string"
+        },
+        "only_fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "create_time": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 50
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "scheme": {
+            "required": true,
+            "type": "string"
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

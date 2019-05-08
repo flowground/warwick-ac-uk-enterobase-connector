@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "prefix": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "description": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

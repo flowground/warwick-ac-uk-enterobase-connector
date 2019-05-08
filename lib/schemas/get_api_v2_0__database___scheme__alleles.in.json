@@ -1,0 +1,56 @@
+{
+    "type": "object",
+    "properties": {
+        "allele_id": {
+            "required": false,
+            "type": "string"
+        },
+        "seq": {
+            "required": false,
+            "type": "string"
+        },
+        "barcode": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "reldate": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "locus": {
+            "required": true,
+            "type": "string"
+        },
+        "only_fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 50
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "scheme": {
+            "required": true,
+            "type": "string"
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

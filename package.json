@@ -1,0 +1,15 @@
+{
+    "name": "warwick-ac-uk-enterobase-connector",
+    "version": "2.0.0",
+    "description": "\nAPI for EnteroBase (http://enterobase.warwick.ac.uk) \n\nEnteroBase is a user-friendly online resource, where users can upload their \nown sequencing data for de novo assembly by a stream-lined pipeline. The assemblies \nare used for calling MLST and wgMLST patterns, allowing users to compare their strains \nto publically available genotyping data from other EnteroBase users, GenBank and classical MLST databases.\n\nClick here to find how to get and use an API token: http://bit.ly/1TKlaOU\n",
+    "main": "component.json",
+    "dependencies": {
+        "elasticio-node": "0.0.9",
+        "elasticio-sailor-nodejs": "^2.2.1",
+        "swagger-client": "^3.8.22"
+    },
+    "author": {
+        "name": "Deutsche Telekom AG"
+    },
+    "license": "Apache-2.0"
+}

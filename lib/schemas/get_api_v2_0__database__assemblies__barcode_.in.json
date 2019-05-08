@@ -1,0 +1,69 @@
+{
+    "type": "object",
+    "properties": {
+        "barcode": {
+            "required": true,
+            "type": "string"
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "assembly_status": {
+                    "type": "string"
+                },
+                "barcode": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "limit": {
+                    "default": 50,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "n50": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "offset": {
+                    "default": 0,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "only_fields": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "orderby": {
+                    "default": "barcode",
+                    "type": "string"
+                },
+                "reldate": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "sortorder": {
+                    "default": "asc",
+                    "type": "string"
+                },
+                "top_species": {
+                    "type": "string"
+                },
+                "uberstrain": {
+                    "type": "string"
+                },
+                "version": {
+                    "format": "int32",
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

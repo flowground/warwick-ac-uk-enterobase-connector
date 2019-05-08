@@ -1,0 +1,72 @@
+{
+    "type": "object",
+    "properties": {
+        "orderby": {
+            "required": false,
+            "type": "string",
+            "default": "barcode"
+        },
+        "only_fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "barcode": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "n50": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "top_species": {
+            "required": false,
+            "type": "string"
+        },
+        "uberstrain": {
+            "required": false,
+            "type": "string"
+        },
+        "version": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 50
+        },
+        "reldate": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "assembly_status": {
+            "required": false,
+            "type": "string"
+        },
+        "sortorder": {
+            "required": false,
+            "type": "string",
+            "default": "asc"
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

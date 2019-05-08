@@ -1,0 +1,142 @@
+{
+    "type": "object",
+    "properties": {
+        "barcode": {
+            "required": true,
+            "type": "string"
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "antigenic_formulas": {
+                    "type": "string"
+                },
+                "assembly_barcode": {
+                    "type": "string"
+                },
+                "barcode": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "collection_date": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "collection_month": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "collection_time": {
+                    "type": "string"
+                },
+                "collection_year": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "comment": {
+                    "type": "string"
+                },
+                "continent": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "county": {
+                    "type": "string"
+                },
+                "lab_contact": {
+                    "type": "string"
+                },
+                "latitude": {
+                    "format": "float",
+                    "type": "number"
+                },
+                "limit": {
+                    "default": 50,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "longitude": {
+                    "format": "float",
+                    "type": "number"
+                },
+                "my_strains": {
+                    "type": "boolean"
+                },
+                "offset": {
+                    "default": 0,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "only_fields": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "orderby": {
+                    "default": "barcode",
+                    "type": "string"
+                },
+                "postcode": {
+                    "type": "string"
+                },
+                "region": {
+                    "type": "string"
+                },
+                "reldate": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "return_all": {
+                    "type": "boolean"
+                },
+                "sample_accession": {
+                    "type": "string"
+                },
+                "secondary_sample_accession": {
+                    "type": "string"
+                },
+                "serotype": {
+                    "type": "string"
+                },
+                "sortorder": {
+                    "default": "asc",
+                    "type": "string"
+                },
+                "source_details": {
+                    "type": "string"
+                },
+                "source_niche": {
+                    "type": "string"
+                },
+                "source_type": {
+                    "type": "string"
+                },
+                "strain_name": {
+                    "type": "string"
+                },
+                "substrains": {
+                    "type": "boolean"
+                },
+                "uberstrain": {
+                    "type": "string"
+                },
+                "version": {
+                    "format": "int32",
+                    "type": "integer"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

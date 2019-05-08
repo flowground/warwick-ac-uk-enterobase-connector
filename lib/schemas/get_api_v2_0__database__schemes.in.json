@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "orderby": {
+            "required": false,
+            "type": "string",
+            "default": "barcode"
+        },
+        "scheme_name": {
+            "required": false,
+            "type": "string"
+        },
+        "created": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "lastmodified": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "barcode": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "label": {
+            "required": false,
+            "type": "string"
+        },
+        "only_fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "version": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 50
+        },
+        "sortorder": {
+            "required": false,
+            "type": "string",
+            "default": "asc"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

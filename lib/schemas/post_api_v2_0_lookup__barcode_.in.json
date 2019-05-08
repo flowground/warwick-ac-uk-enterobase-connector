@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "barcode": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "barcode": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

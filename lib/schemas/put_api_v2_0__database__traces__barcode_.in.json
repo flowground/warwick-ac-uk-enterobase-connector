@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "barcode": {
+            "required": true,
+            "type": "string"
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "barcode": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "limit": {
+                    "default": 50,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "offset": {
+                    "default": 0,
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "only_fields": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "orderby": {
+                    "default": "barcode",
+                    "type": "string"
+                },
+                "sortorder": {
+                    "default": "asc",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

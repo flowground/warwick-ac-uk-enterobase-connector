@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "properties": {
+        "st_id": {
+            "required": false,
+            "type": "string"
+        },
+        "scheme": {
+            "required": true,
+            "type": "string"
+        },
+        "show_alleles": {
+            "required": false,
+            "type": "boolean"
+        },
+        "barcode": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "only_fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "limit": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 50
+        },
+        "reldate": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "offset": {
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 0
+        },
+        "database": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

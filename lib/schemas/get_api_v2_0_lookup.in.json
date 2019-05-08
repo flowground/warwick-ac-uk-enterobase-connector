@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "barcode": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
